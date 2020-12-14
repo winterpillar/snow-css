@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Css</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/snow-css.css">
+    <style>
+        body{background-color:#333;}
+        section {padding:30px 40px; margin-bottom:30px; background-color:#fff;}
+        h2 {display:inline-block; padding:5px 30px 12px; font-size:30px; font-weight:700; color:#fff; background-color:#30A9DE; border-radius:5px;}
+        h3 {line-height:1.5;}
+        .flex-box {display:flex;}
+        .contents-box {min-width:200px; padding:40px 0;}
+        .contents-box h3 {margin-bottom:15px; font-weight:bold;}
+        .contents-box + .contents-box {margin-left:50px;}
+        .contents-box.full {width:100%;}
+        .img-box {width:200px; height:200px;}
+        .snow-box {width:400px;}
+        .box {width:120px; height:30px; padding:15px; background-color:#ddd; border:2px solid #fff; border-radius:5px; box-sizing:border-box;}
+        .box.big {width:240px;}
+        .box.small {width:60px;}
+    </style>
+</head>
+<body>
+    <!-- <h2>Header 1</h2>
+    <h3>Header 2</h3>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6> -->
+    
+    <section>
+        <h2>snow-btn</h2>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>&lt;button&gt; tag</h3>
+                <button class="snow-btn">버튼</button>
+                <button class="snow-btn">Button</button>
+            </div>
+            <div class="contents-box">
+                <h3>&lt;a&gt; tag</h3>
+                <a href="#" class="snow-btn">버튼</a>
+                <a href="#" class="snow-btn">Button</a>
+            </div>
+            <div class="contents-box">
+                <h3>&lt;div&gt; tag</h3>
+                <div class="snow-btn" tabindex="0">버튼</div>
+                <div class="snow-btn" tabindex="0">Button</div>
+            </div>
+            <div class="contents-box">
+                <h3>&lt;span&gt; tag</h3>
+                <span class="snow-btn" tabindex="0">버튼</span>
+                <span class="snow-btn" tabindex="0">Button</span>
+            </div>
+            <div class="contents-box">
+                <h3>[input type="button", "reset", "submit"]</h3>
+                <input type="button" class="snow-btn" value="버튼">
+                <input type="reset" class="snow-btn" value="버튼">
+                <input type="submit" class="snow-btn" value="버튼">
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>attr: disabled</h3>
+                <button class="snow-btn" disabled>버튼</button>
+            </div>
+            <div class="contents-box">
+                <h3>class: loading</h3>
+                <button class="snow-btn loading">버튼</button>
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>class: arrow-left</h3>
+                <button class="snow-btn arrow-left"></button>
+            </div>
+            <div class="contents-box">
+                <h3>class: arrow-right</h3>
+                <a class="snow-btn arrow-right"></a>
+            </div>
+            <div class="contents-box">
+                <h3>class: arrow-up</h3>
+                <div class="snow-btn arrow-up"></div>
+            </div>
+            <div class="contents-box">
+                <h3>class: arrow-down</h3>
+                <span class="snow-btn arrow-down"></span>
+            </div>
+        </div>
+        <div class="contents-box">
+            <h3>class: full</h3>
+            <button class="snow-btn full">버튼</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>snow-img</h2>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>default (horizontal img)</h3>
+                <div class="img-box snow-img">
+                    <img src="img/img_sample.jpg">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: row (horizontal img)</h3>
+                <div class="img-box snow-img row">
+                    <img src="img/img_sample.jpg">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>default (vertical img)</h3>
+                <div class="img-box snow-img">
+                    <img src="img/img_sample.png">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: col (vertical img)</h3>
+                <div class="img-box snow-img col">
+                    <img src="img/img_sample.png">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: round</h3>
+                <div class="img-box snow-img row round">
+                    <img src="img/img_sample.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>snow-input</h2>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>default</h3>
+                <div class="snow-input">
+                    <input type="text" placeholder="text">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: loading</h3>
+                <div class="snow-input loading">
+                    <input type="password" placeholder="password">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: loading left</h3>
+                <div class="snow-input loading left">
+                    <input type="password" placeholder="password">
+                </div>
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>class: disabled</h3>
+                <div class="snow-input disabled">
+                    <input type="number" placeholder="number">
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: error</h3>
+                <div class="snow-input error">
+                    <input type="email" placeholder="email">
+                    <!-- <p class="error-txt">error text<br>error text </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>snow-box (flex)</h2>
+        <div class="flex-box">
+            <div class="contents-box">
+                <h3>default</h3>
+                <div class="snow-box">
+                    <div class="box small"></div>
+                    <div class="box small"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box big"></div>
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: row</h3>
+                <div class="snow-box row">
+                    <div class="box big"></div>
+                    <div class="box small"></div>
+                    <div class="box small"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box big"></div>
+                    <div class="box small"></div>
+                </div>
+            </div>
+            <div class="contents-box">
+                <h3>class: row nowrap</h3>
+                <div class="snow-box row nowrap">
+                    <div class="box big"></div>
+                    <div class="box big"></div>
+                    <div class="box big"></div>
+                    <div class="box big"></div>
+                    <div class="box big"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
